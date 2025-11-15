@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import ChatBot from './components/ChatBot';
 
 function App() {
    const [message, setMessage] = useState('');
@@ -8,7 +9,9 @@ function App() {
          .then((data) => setMessage(data.message));
    }, []);
 
-   return <p className="font-bold p-5 text-4xl">{message}</p>;
+   return <div>
+      <ChatBot />
+   </div>;
 }
 
 export default App;
