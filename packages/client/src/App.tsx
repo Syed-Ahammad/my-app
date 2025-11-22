@@ -9,7 +9,7 @@ function App() {
          .then((data) => setMessage(data.message));
    }, []);
 
-   return <div>
+   return <div className='p-4'>
       <ChatBot />
    </div>;
 }
